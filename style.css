@@ -1,0 +1,45 @@
+/* Base Reset & Smooth Scrolling */
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8faf6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c3c8c0;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #747872;
+}
+
+/* Form Controls & Focus Ring */
+input:focus, select:focus {
+  border-color: #445646 !important;
+  box-shadow: 0 0 0 2px rgba(68, 86, 70, 0.15);
+}
+
+/* Product Specification Table Hover Effects */
+table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+table tbody tr:hover {
+  background-color: #f3f4f0;
+}
+
+/* Order Page Bundle Selector Active State */
+.bundle-active {
+  border-color: #445646 !important;
+  background-color: #f8faf6 !important;
+}
